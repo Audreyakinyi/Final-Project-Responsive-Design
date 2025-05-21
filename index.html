@@ -14,18 +14,21 @@
             <div class="nav-left">
                 <ul class="nav-links">
                     <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
                 </ul>
             </div>
             <div class="nav-center">
-                <a href="#" class="logo">Solus</a>
+                <a href="#" class="logo">
+                    <span class="logo-main">Kicks&nbsp;&amp;&nbsp;Scents</span>
+                    <span class="logo-sub">By Audrey👟</span>
+                </a>
             </div>
             <div class="nav-right">
                 <ul class="nav-links">
-                    <li><a href="#therapists">Therapists</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+                    <li><a href="#scents">Scents</a></li>
+                    <li><a href="#kicks">Kicks</a></li>
+                    <li><a href="#contact" class="contact-btn">Contact</a></li>
                 </ul>
             </div>
             <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,22 +44,36 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Find Support, Guidance, and Balance</h1>
-            <p>We're Here to Support You</p>
-            <button class="cta-button">Get in Touch</button>
+            <div class="hero-images">
+                <img src="images/shoe1.jpg" alt="Featured Sneaker">
+                <img src="images/scent1.jpg" alt="Featured Scent">
+            </div>
+            <div class="hero-overlay">
+                <h1>Step Up Your Style & Scent</h1>
+                <p>Discover unique sneakers and captivating fragrances curated by Audrey.</p>
+                <button class="cta-button">Shop Now</button>
+            </div>
         </div>
     </section>
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
-        <div class="how-it-works-content">
-            <div class="how-it-works-text">
-                <h2>We Help You<br>Prioritize Your<br>Mental Health</h2>
-                <p>Find a therapist, book a session, and begin healing.</p>
-                <button class="find-therapist">Find a Therapist</button>
+        <div class="how-it-works-content how-it-works-content-offset">
+            <div class="how-it-works-text how-it-works-text-offset">
+                <div class="how-it-works-label not-bold">HOW IT WORKS</div>
+                <h2>
+                    How to Shop<br>
+                    Your Perfect<br>
+                    Kicks & Scents
+                </h2>
+                <p>Browse our curated collection, add your favorite sneakers and fragrances to your cart, and enjoy fast delivery to your doorstep.</p>
+                <button class="find-therapist">Start Shopping</button>
             </div>
             <div class="how-it-works-image">
-                <img src="../images/how-it-works.jpg" alt="Therapy session" class="image-card">
+                <div class="image-card how-it-works-collage-card">
+                    <img src="images/how-it-works-sneaker.jpg" alt="Sneaker shopping" class="collage-img collage-img-main">
+                    <img src="images/how-it-works-scent.jpg" alt="Scent shopping" class="collage-img collage-img-accent">
+                </div>
             </div>
         </div>
     </section>
@@ -64,23 +81,32 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="services-header">
-            <h2>Your Path<br>to Well-being</h2>
-            <p>Discover our comprehensive approach to mental health and wellness</p>
+            <div class="services-label">Services</div>
+            <h2>Discover the Best in Sneakers & Fragrances</h2>
+            <p>From exclusive sneaker drops to curated fragrance collections, we bring you the freshest kicks and the most captivating scents. Explore our services to elevate your style and express your unique personality.</p>
         </div>
         <div class="services-grid">
             <div class="service-card">
-                <h3>One-on-One Therapy</h3>
-                <p>Virtual or in-person with licensed professionals</p>
-                <a href="#" class="learn-more">Learn More</a>
+                <img src="images/services-kicks.webp" alt="Premium Sneaker Sourcing" class="service-image">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3>Premium Sneaker Sourcing</h3>
+                    <p>We hunt down the latest and rarest sneakers, ensuring you always step out in style. Authenticity and quality guaranteed.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
             </div>
             <div class="service-card">
-                <h3>Mindfulness & Meditation</h3>
-                <p>Stress reduction techniques and guided sessions</p>
-                <a href="#" class="learn-more">Learn More</a>
+                <img src="images/services-scents.jpg" alt="Curated Fragrance Selection" class="service-image">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <h3>Curated Fragrance Selection</h3>
+                    <p>Discover signature scents from top brands and niche perfumers. Find the perfect fragrance to match your vibe.</p>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
             </div>
             <div class="service-card wide">
-                <h3>Wellness Coaching</h3>
-                <p>Personalized support for habits and balance</p>
+                <h3>Personalized Style Consultations</h3>
+                <p>Get expert advice on pairing kicks with scents, and build a collection that’s uniquely yours. Our stylists are here to help you stand out.</p>
                 <a href="#" class="learn-more">Learn More</a>
             </div>
         </div>
@@ -171,129 +197,147 @@
     <section id="faqs" class="faqs">
         <div class="faq-container">
             <div class="faq-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Need Help?</p>
+                <h2>Frequently <br> Asked Questions</h2>
+                <p>Need Help? We're here for you</p>
+            </div>
+            <div class="faq-sidebar">
+                <div class="faq-image-card">
+                    <div class="image-card-content">
+                        <h3>Your Mental Health Journey Starts Here</h3>
+                        <p>Professional support for a happier, healthier you</p>
+                        <button class="cta-button">Get Started Today</button>
+                    </div>
+                </div>
             </div>
             <div class="faq-content">
                 <div class="faq-card">
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>How to book a session?</h3>
+                            <h3>How do I book a therapy session?</h3>
                             <button class="faq-toggle">+</button>
                         </div>
                         <div class="faq-answer">
-                            <p>Answer goes here...</p>
+                            <p>You can easily book a session through our website by selecting your preferred therapist and available time slot. Complete the booking by providing your details and making a secure payment.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Are online sessions available?</h3>
+                            <h3>Are online therapy sessions available?</h3>
                             <button class="faq-toggle">+</button>
                         </div>
                         <div class="faq-answer">
-                            <p>Answer goes here...</p>
+                            <p>Yes, we offer both in-person and online therapy sessions. Our secure video platform allows you to connect with your therapist from the comfort of your home.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Therapy vs. coaching?</h3>
+                            <h3>What's the difference between therapy and coaching?</h3>
                             <button class="faq-toggle">+</button>
                         </div>
                         <div class="faq-answer">
-                            <p>Answer goes here...</p>
+                            <p>Therapy focuses on treating mental health conditions and emotional difficulties, while coaching is more goal-oriented and focuses on personal development and achieving specific life goals.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Can I switch therapists?</h3>
+                            <h3>Is my personal information kept confidential?</h3>
                             <button class="faq-toggle">+</button>
                         </div>
                         <div class="faq-answer">
-                            <p>Answer goes here...</p>
+                            <p>Absolutely. We adhere to strict confidentiality protocols in compliance with healthcare privacy laws. Your information is securely stored and never shared without your explicit consent, except where required by law.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Is a subscription required?</h3>
+                            <h3>Do you accept insurance?</h3>
                             <button class="faq-toggle">+</button>
                         </div>
                         <div class="faq-answer">
-                            <p>Answer goes here...</p>
+                            <p>We work with several major insurance providers. Please contact our support team with your insurance details, and we'll verify your coverage. We also offer affordable self-pay options and sliding scale fees based on income.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Is my info confidential?</h3>
+                            <h3>How long are therapy sessions?</h3>
                             <button class="faq-toggle">+</button>
                         </div>
                         <div class="faq-answer">
-                            <p>Answer goes here...</p>
+                            <p>Standard therapy sessions are 50 minutes long. Initial consultations may take up to 90 minutes to allow for a comprehensive assessment. We also offer extended sessions (80 minutes) upon request for couples or family therapy.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <h3>Is my info confidential?</h3>
-                <p>Answer goes here...</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Send Us a Message</h2>
-        <div class="contact-container">
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
-                </form>
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h2>We're Here to<br>Support You</h2>
+                <p>Whether you have questions, need help getting started, or want to learn more — reach out anytime.</p>
             </div>
-            <div class="contact-info">
-                <h3>Contact Info</h3>
-                <p><i class="fas fa-envelope"></i> support@solus.com</p>
-                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Wellness Way, Calm City, CA 90210</p>
+            <div class="contact-card contact-card-wide">
+                <div class="contact-content">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> support@solus.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Wellness Way, Calm City, CA 90210</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#therapists">Therapists</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <div class="footer-cards">
+            <!-- Left Card: Quick Links, Social, Legal, Navigation -->
+            <div class="footer-card footer-card-left">
+                <div class="footer-logo">
+                    <span>Solus</span>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+                <div class="footer-links-list">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2035 Solus. All rights reserved.</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#therapists">Therapists</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
-            <div class="legal">
-                <p>&copy; 2035 Solus. All rights reserved.</p>
-                <p><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></p>
+            <!-- Right Card: Headline and Button -->
+            <div class="footer-card footer-card-right">
+                <h2>Find <br>Support,<br>Guidance,<br>and Balance.</h2>
+                <button class="footer-support-btn">Find Support now</button>
             </div>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
 </body>
 </html>
