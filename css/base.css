@@ -1,0 +1,98 @@
+/* CSS Variables */
+:root {
+    --section-width: 1400px;
+    --section-padding: 2rem;
+    --primary-color: #007acc;
+    --primary-dark: #005a99;
+    --accent-color: #ff6b6b;
+    --text-color: #1a1a1a;
+    --text-light: #666;
+    --background-light: #f5f5dc;
+    --white: #fff;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-light);
+}
+
+/* Global Button Styles */
+.learn-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.learn-more:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Global Card Styles */
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.38);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Global Section Styles */
+.section-container {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    max-width: var(--section-width);
+    margin: 0 auto;
+    padding: var(--section-padding);
+}
+
+/* Section Content Containers */
+.section-content {
+    width: 100%;
+    max-width: var(--section-width);
+    margin: 0 auto;
+    padding: 0 var(--section-padding);
+}
+
+/* Card Base Styles */
+.card-base {
+    background: var(--white);
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-base:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .section-container,
+    .section-content {
+        padding: 1rem;
+    }
+}
+
+/* Remove horizontal lines/dividers */
+hr, .divider, .horizontal-line {
+    display: none;
+}

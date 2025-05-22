@@ -1,0 +1,108 @@
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border-radius: 70px;
+    overflow: hidden;
+    background: none;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: var(--section-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.hero-images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-images img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-overlay h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-overlay p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.hero-overlay .cta-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-overlay .cta-button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.25rem;
+    }
+
+    .hero-overlay .cta-button {
+        padding: 1rem 2rem;
+    }
+}

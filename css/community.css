@@ -1,0 +1,118 @@
+/* Community Section */
+.community {
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.community::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    pointer-events: none;
+}
+
+.community-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 50px;
+    padding: 4rem 3rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.community-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.community-content {
+    max-width: 600px;
+}
+
+.community-content h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.community-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.join-community {
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.join-community::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.join-community:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .community {
+        padding: 4rem 1rem;
+    }
+    
+    .community-card {
+        border-radius: 30px;
+        padding: 3rem 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .community-content {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    
+    .community-content h2 {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+    
+    .community-content h2::before {
+        display: none;
+    }
+    
+    .community-content p {
+        font-size: 1.1rem;
+    }
+}
