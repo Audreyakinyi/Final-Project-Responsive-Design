@@ -1,4 +1,12 @@
 /* Testimonials Section */
+.testimonials-label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--label-color);
+    margin-bottom: 2rem;
+}
+
 .testimonials {
     padding: 4rem 2rem;
     position: relative;
@@ -16,8 +24,8 @@
 }
 
 .testimonials-container {
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 2rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 4rem;

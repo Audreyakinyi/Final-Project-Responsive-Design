@@ -4,7 +4,6 @@
     border: none;
     box-shadow: none;
     width: 100%;
-    max-width: var(--section-width);
     margin: 0 auto;
     padding: var(--section-padding);
 }
@@ -12,7 +11,6 @@
 /* Header Styles */
 .services-header {
     width: 100%;
-    max-width: var(--section-width);
     margin: 0 auto;
     padding: 0 var(--section-padding);
     text-align: center;
@@ -28,7 +26,6 @@
 .services-header p {
     font-size: 1.1rem;
     color: var(--text-light);
-    max-width: 600px;
     margin: 0 auto 2rem;
 }
 
@@ -45,7 +42,6 @@
     border-radius: 40px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;

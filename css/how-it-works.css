@@ -5,7 +5,6 @@
     border: none;
     box-shadow: none;
     width: 100%;
-    max-width: var(--section-width);
     margin: 0 auto;
 }
 
@@ -14,7 +13,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    max-width: var(--section-width);
     margin: 0 auto;
     align-items: center;
 }
@@ -48,10 +46,10 @@
 
 .how-it-works-label {
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.12em;
-    color: var(--primary-color);
-    margin-bottom: 1.2rem;
+    color: var(--label-color);
+    margin-bottom: 2rem;
     margin-left: 0.2rem;
     text-transform: uppercase;
     text-align: left;

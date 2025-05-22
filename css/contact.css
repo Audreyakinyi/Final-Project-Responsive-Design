@@ -1,8 +1,15 @@
 /* Contact Section */
+.contact-label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--label-color);
+    margin-bottom: 2rem;
+}
+
 .contact {
     background-color: var(--background-light);
     padding: 4rem 2rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 

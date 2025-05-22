@@ -1,4 +1,11 @@
 /* Community Section */
+.community-label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--label-color);
+    margin-bottom: 2rem;
+}
 .community {
     padding: 5rem 2rem;
     position: relative;
@@ -16,7 +23,6 @@
 }
 
 .community-card {
-    max-width: 1200px;
     margin: 0 auto;
     border-radius: 50px;
     padding: 4rem 3rem;
@@ -38,7 +44,7 @@
 }
 
 .community-content {
-    max-width: 600px;
+    margin: 0 auto;
 }
 
 .community-content h2 {

@@ -1,4 +1,11 @@
 /* FAQ Section */
+.faq-label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--label-color);
+    margin-bottom: 2rem;
+}
 .faqs {
     background-color: var(--background-light);
     padding: 0.5rem 2rem 3rem;
@@ -16,7 +23,6 @@
 }
 
 .faq-container {
-    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.1fr 2fr;
@@ -26,7 +32,6 @@
     padding: 0.5rem 0.5rem 0;
     box-sizing: border-box;
     position: relative;
-    height: 100%;
 }
 
 .faq-header {

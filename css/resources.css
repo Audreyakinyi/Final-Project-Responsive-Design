@@ -1,10 +1,16 @@
 /* Resources Section */
+.resources-label {
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    color: var(--label-color);
+    margin-bottom: 2rem;
+}
 .resources {
     padding: 5rem 2rem 4rem;
 }
 
 .resources-header {
-    max-width: 800px;
     margin: 0 auto 3rem;
     text-align: center;
 }
@@ -24,7 +30,6 @@
 }
 
 .resources-grid {
-    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
