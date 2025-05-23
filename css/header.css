@@ -20,6 +20,7 @@
 .nav-right {
     display: flex;
     align-items: center;
+    margin: 0 2rem;
 }
 
 .nav-center {
@@ -30,7 +31,7 @@
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 3.5rem;
     margin: 0;
     padding: 0;
     align-items: center;
@@ -47,13 +48,14 @@
     line-height: 1.1;
     color: var(--text-color);
     text-decoration: none;
-    transition: opacity 0.3s ease;
     white-space: normal;
     max-width: 220px;
     word-break: break-word;
     font-weight: 800;
     vertical-align: middle;
     padding: 0;
+    position: relative;
+    z-index: 1000;
 }
 
 .logo-main {
@@ -72,10 +74,6 @@
     margin-top: 0.25rem;
     color: var(--text-light);
     letter-spacing: 0.01em;
-}
-
-.logo:hover {
-    opacity: 0.8;
 }
 
 /* Navigation Links */
@@ -110,18 +108,113 @@
 .contact-btn:hover {
     transform: translateY(-2px);
     font-weight: 600;
+    color: var(--primary-color);
 }
 
-/* Mobile Menu Toggle */
+/* Mobile Menu Toggle - Hidden by default */
 .mobile-menu-toggle {
-    display: none;
+    display: none; /* Hidden by default */
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.75rem;
+    z-index: 1000;
+    position: relative;
+    width: 40px;
+    height: 40px;
 }
 
-/* Responsive Header */
+.mobile-menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+.mobile-nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% - 0.5rem);
+    right: 1rem;
+    width: 200px;
+    background-color: var(--white);
+    z-index: 1000;
+    padding: 0.5rem;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 0 12px;
+}
+
+.mobile-nav-links.active {
+    display: block;
+}
+
+.mobile-nav-links .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.mobile-nav-links .nav-links li {
+    width: 100%;
+    text-align: center;
+}
+
+.mobile-nav-links .nav-links a {
+    display: block;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav-links .nav-links a:hover {
+    background-color: var(--background-light);
+}
+
+.mobile-nav-links .contact-btn {
+    margin: 0.5rem 0 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-links .contact-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Close button */
+.mobile-nav-links .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-links .close-btn:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .nav-links {
+        gap: 2rem;
+    }
+    
+    .contact-btn {
+        padding: 0.625rem 1.25rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .nav-links {
         gap: 1.5rem;
@@ -130,44 +223,48 @@
     .contact-btn {
         padding: 0.625rem 1.25rem;
     }
+    
+    .header {
+        padding: 1.5rem 0;
+    }
 }
 
 @media (max-width: 768px) {
+    /* Show mobile menu toggle only on mobile */
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .mobile-menu-toggle {
         display: block;
-    }
-    
-    .nav-links {
-        display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--white);
-        flex-direction: column;
-        padding: 1rem 0;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        gap: 0;
+        right: 0.5rem;
+        top: 0;
+    }
+
+    .nav-center {
+        flex: none;
+        padding: 0 1rem;
+        margin: 0;
+        text-align: left;
+    }
+
+    .nav-left,
+    .nav-right {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-nav-links .nav-links a {
+        font-size: 1rem;
+        padding: 0.8rem;
     }
     
-    .nav-links.active {
-        display: flex;
-    }
-    
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-    }
-    
-    .nav-links a {
-        display: block;
-        padding: 1rem;
-    }
-    
-    .contact-btn {
-        margin: 0.5rem 1rem 0;
-        display: inline-block;
-        width: calc(100% - 2rem);
-        text-align: center;
+    .mobile-nav-links .contact-btn {
+        padding: 0.8rem;
+        font-size: 1rem;
     }
 }

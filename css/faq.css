@@ -8,13 +8,17 @@
 }
 .faqs {
     background-color: var(--background-light);
-    padding: 0.5rem 2rem 3rem;
-    display: flex;
-    align-items: flex-start;
-    min-height: 0;
+    padding: 4rem 0;
+    width: 100%;
     box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
+}
+
+.faqs-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .faqs h2 {
@@ -23,15 +27,15 @@
 }
 
 .faq-container {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1.1fr 2fr;
     grid-template-rows: auto 1fr;
     gap: 0;
     align-items: start;
-    padding: 0.5rem 0.5rem 0;
+    padding: 0.5rem 0 0;
     box-sizing: border-box;
     position: relative;
+    width: 100%;
 }
 
 .faq-header {

@@ -7,7 +7,7 @@
     --accent-color: #ff6b6b;
     --text-color: #1a1a1a;
     --text-light: #666;
-    --background-light: #f5f5dc;
+    --background-light: #f7cece;
     --white: #fff;
     --label-color: #007bff;
 }
@@ -27,20 +27,63 @@ body {
 }
 
 /* Global Button Styles */
-.learn-more {
-    color: var(--primary-color);
+.oval-button,
+.learn-more,
+a.learn-more,
+button:not([class*="menu-toggle"]):not(.mobile-menu-toggle):not(.close-btn) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
+    cursor: pointer;
     transition: all 0.3s ease;
-    display: inline-block;
+    min-width: 120px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
 }
 
-.learn-more:hover {
-    color: var(--primary-dark);
-    text-decoration: underline;
+.oval-button:hover,
+.learn-more:hover,
+a.learn-more:hover,
+button:not([class*="menu-toggle"]):not(.mobile-menu-toggle):not(.close-btn):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-decoration: none;
+}
+
+/* Secondary button variant */
+.oval-button.secondary,
+.learn-more.secondary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+/* Small button variant */
+.oval-button.small,
+.learn-more.small {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+/* Large button variant */
+.oval-button.large,
+.learn-more.large {
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    min-width: 160px;
 }
 
 /* Global Card Styles */

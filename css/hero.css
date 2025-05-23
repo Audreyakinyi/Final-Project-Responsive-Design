@@ -5,12 +5,11 @@
     height: 600px;
     border-radius: 70px;
     overflow: hidden;
-    background: none;
 }
 
 .hero-content {
     position: relative;
-    width: 100%;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -43,8 +42,8 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: var(--white);
     text-align: center;
     z-index: 2;
@@ -70,7 +69,6 @@
     background-color: var(--primary-color);
     color: var(--white);
     padding: 1.2rem 3rem;
-    border: none;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -79,6 +77,9 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .hero-overlay .cta-button:hover {

@@ -6,10 +6,20 @@
     color: var(--label-color);
     margin-bottom: 2rem;
 }
+
 .community {
-    padding: 5rem 2rem;
+    padding: 4rem 0;
     position: relative;
     overflow: hidden;
+    background-color: var(--background-light);
+}
+
+.community-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .community::before {
@@ -23,14 +33,19 @@
 }
 
 .community-card {
-    margin: 0 auto;
     border-radius: 50px;
-    padding: 4rem 3rem;
+    padding: 5rem 3rem; /* Increased vertical padding from 4rem to 5rem */
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center;
     position: relative;
     overflow: hidden;
+    background: white;
+    max-width: 100%;
+    min-height: 400px; /* Added minimum height */
 }
 
 .community-card::before {

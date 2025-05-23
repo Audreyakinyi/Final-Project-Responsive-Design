@@ -29,9 +29,9 @@
                 </ul>
             </div>
             <div class="nav-center">
-                <a href="#" class="logo">
-                    <span class="logo-main">Kicks&nbsp;&amp;&nbsp;Scents</span>
-                    <span class="logo-sub">By Audrey👟</span>
+                <a href="#" class="logo" aria-label="Kicks & Scents Home">
+                    <span class="logo-text logo-main">Kicks&nbsp;&amp;&nbsp;Scents</span>
+                    <span class="logo-text logo-sub">By Audrey👟</span>
                 </a>
             </div>
             <div class="nav-right">
@@ -41,13 +41,28 @@
                     <li><a href="#contact" class="contact-btn">Contact</a></li>
                 </ul>
             </div>
-            <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21" stroke="#1B1D21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 6H21" stroke="#1B1D21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M3 18H21" stroke="#1B1D21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+            <div class="mobile-menu-container">
+                <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Toggle navigation" id="mobile-menu-toggle">
+                    <span class="hamburger-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#1B1D21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="#1B1D21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="#1B1D21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <div class="mobile-nav-links" id="mobile-nav-links">
+                    <button class="close-btn" aria-label="Close menu">&times;</button>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#scents">Scents</a></li>
+                        <li><a href="#kicks">Kicks</a></li>
+                        <li><a href="#contact" class="contact-btn">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -90,17 +105,18 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="services-header">
-            <div class="services-label">Services</div>
-            <h2>Discover the Best in Sneakers & Fragrances</h2>
-            <p>From exclusive sneaker drops to curated fragrance collections, we bring you the freshest kicks and the most captivating scents. Explore our services to elevate your style and express your unique personality.</p>
-        </div>
-        <div class="services-grid">
+        <div class="services-wrapper">
+            <div class="services-header">
+                <div class="services-label">Services</div>
+                <h2>Discover the Best in Sneakers<br>& Fragrances for Every Style</h2>
+                <p>From exclusive sneaker drops to curated fragrance collections, we bring you the freshest kicks and the most captivating scents. Explore our services to elevate your style and express your unique personality.</p>
+            </div>
+            <div class="services-grid">
             <div class="service-card">
                 <img src="images/services-kicks.webp" alt="Premium Sneaker Sourcing" class="service-image">
                 <div class="card-overlay"></div>
                 <div class="card-content">
-                    <h3>Premium Sneaker Sourcing</h3>
+                    <h3>Premium Sneaker Sourcing <br>for Every Occasion</h3>
                     <p>We hunt down the latest and rarest sneakers, ensuring you always step out in style. Authenticity and quality guaranteed.</p>
                     <a href="#" class="learn-more">Learn More</a>
                 </div>
@@ -109,7 +125,7 @@
                 <img src="images/services-scents.jpg" alt="Curated Fragrance Selection" class="service-image">
                 <div class="card-overlay"></div>
                 <div class="card-content">
-                    <h3>Curated Fragrance Selection</h3>
+                    <h3>Curated Fragrance Selection<br> for Every Mood</h3>
                     <p>Discover signature scents from top brands and niche perfumers. Find the perfect fragrance to match your vibe.</p>
                     <a href="#" class="learn-more">Learn More</a>
                 </div>
@@ -124,8 +140,9 @@
 
     <!-- Testimonials Section -->
     <section class="testimonials">
-        <div class="testimonials-label not-bold">TESTIMONIALS</div>
-        <div class="testimonials-container">
+        <div class="testimonials-wrapper">
+            <div class="testimonials-label not-bold">TESTIMONIALS</div>
+            <div class="testimonials-container">
             <div class="testimonials-text">
                 <h2>What Our Customers<br>Are Saying</h2>
                 <p>Positive experiences from customers who have<br>shopped with us and found their perfect<br>style and scent.</p>
@@ -170,113 +187,119 @@
 
     <!-- Resources Section -->
     <section class="resources">
-        <div class="resources-label not-bold">EXPLORE & LEARN</div>
-        <div class="resources-header">
-            <h2>Resources for Your<br>Style & Fragrance Journey</h2>
-            <p>Discover & Shop</p>
-        </div>
-        <div class="resources-grid">
-            <div class="resource-card">
-                <h3>Style & Fragrance Guides</h3>
-                <p>Discover expert insights and practical advice</p>
-                <button class="explore">Explore</button>
+        <div class="resources-wrapper">
+            <div class="resources-label not-bold">EXPLORE & LEARN</div>
+            <div class="resources-header">
+                <h2>Resources for Your<br>Style & Fragrance Journey</h2>
+                <p>Discover & Shop</p>
             </div>
-            <div class="resource-card">
-                <h3>Scent Discovery</h3>
-                <p>Guided sessions for stress relief</p>
-                <button class="explore">Explore</button>
-            </div>
-            <div class="resource-card">
-                <h3>Style Consultations</h3>
-                <p>Live and recorded educational sessions</p>
-                <button class="explore">Explore</button>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Style & Fragrance Guides</h3>
+                    <p>Discover expert insights and practical advice</p>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Scent Discovery</h3>
+                    <p>Guided sessions for stress relief</p>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Style Consultations</h3>
+                    <p>Live and recorded educational sessions</p>
+                    <button class="explore">Explore</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Community Section -->
     <section class="community">
-        <div class="community-card">
-            <div class="community-label not-bold">COMMUNITY</div>
-            <div class="community-content">
-                <h2>Join Our Style & Fragrance Community</h2>
-                <p>Join our community of style enthusiasts and fragrance lovers.</p>
-                <button class="join-community">Join the Community</button>
+        <div class="community-wrapper">
+            <div class="community-card">
+                <div class="community-label not-bold">COMMUNITY</div>
+                <div class="community-content">
+                    <h2>Join Our Style & Fragrance Community</h2>
+                    <p>Join our community of style enthusiasts and fragrance lovers.</p>
+                    <button class="join-community">Join the Community</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq">
-        <div class="faq-label not-bold">NEED HELP?</div>
-        <div class="faq-container">
-            <div class="faq-header">
-                <h2>Frequently <br> Asked Questions</h2>
-                <p>Need Help? We're here to assist you</p>
-            </div>
-            <div class="faq-sidebar">
-                <div class="faq-image-card">
-                    <div class="image-card-content">
-                        <h3>Your Mental Health Journey Starts Here</h3>
-                        <p>Professional support for a happier, healthier you</p>
-                        <button class="cta-button">Get Started Today</button>
+    <section class="faqs">
+        <div class="faqs-wrapper">
+            <div class="faq-label not-bold">NEED HELP?</div>
+            <div class="faq-container">
+                <div class="faq-header">
+                    <h2>Frequently <br> Asked Questions</h2>
+                    <p>Need Help? We're here to assist you</p>
+                </div>
+                <div class="faq-sidebar">
+                    <div class="faq-image-card">
+                        <div class="image-card-content">
+                            <h3>Your Style Journey Starts Here</h3>
+                            <p>Professional support for a more stylish you</p>
+                            <button class="cta-button">Get Started Today</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="faq-content">
-                <div class="faq-card">
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How do I book a therapy session?</h3>
-                            <button class="faq-toggle">+</button>
+                <div class="faq-content">
+                    <div class="faq-card">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I book a style consultation?</h3>
+                                <button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can easily book a consultation through our website by selecting your preferred stylist and available time slot. Complete the booking by providing your details and making a secure payment.</p>
+                            </div>
                         </div>
-                        <div class="faq-answer">
-                            <p>You can easily book a session through our website by selecting your preferred therapist and available time slot. Complete the booking by providing your details and making a secure payment.</p>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Do you offer virtual consultations?</h3>
+                                <button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer both in-person and virtual style consultations. Our secure video platform allows you to connect with your stylist from the comfort of your home.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Are online therapy sessions available?</h3>
-                            <button class="faq-toggle">+</button>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What's the difference between personal shopping and styling?</h3>
+                                <button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Personal shopping focuses on helping you find specific items, while styling is about creating complete looks that work for your body type, lifestyle, and personal style.</p>
+                            </div>
                         </div>
-                        <div class="faq-answer">
-                            <p>Yes, we offer both in-person and online therapy sessions. Our secure video platform allows you to connect with your therapist from the comfort of your home.</p>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is my personal style information kept private?</h3>
+                                <button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely. We adhere to strict privacy protocols. Your information is securely stored and never shared without your explicit consent.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>What's the difference between therapy and coaching?</h3>
-                            <button class="faq-toggle">+</button>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Do you offer gift cards?</h3>
+                                <button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer gift cards in various denominations. They make perfect gifts for fashion-forward friends and family members.</p>
+                            </div>
                         </div>
-                        <div class="faq-answer">
-                            <p>Therapy focuses on treating mental health conditions and emotional difficulties, while coaching is more goal-oriented and focuses on personal development and achieving specific life goals.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Is my personal information kept confidential?</h3>
-                            <button class="faq-toggle">+</button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Absolutely. We adhere to strict confidentiality protocols in compliance with healthcare privacy laws. Your information is securely stored and never shared without your explicit consent, except where required by law.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>Do you accept insurance?</h3>
-                            <button class="faq-toggle">+</button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>We work with several major insurance providers. Please contact our support team with your insurance details, and we'll verify your coverage. We also offer affordable self-pay options and sliding scale fees based on income.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            <h3>How long are therapy sessions?</h3>
-                            <button class="faq-toggle">+</button>
-                        </div>
-                        <div class="faq-answer">
-                            <p>Standard therapy sessions are 50 minutes long. Initial consultations may take up to 90 minutes to allow for a comprehensive assessment. We also offer extended sessions (80 minutes) upon request for couples or family therapy.</p>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How long does a styling session last?</h3>
+                                <button class="faq-toggle">+</button>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Standard styling sessions are 60 minutes long. Initial consultations may take up to 90 minutes to allow for a comprehensive style assessment. We also offer extended sessions for wardrobe overhauls or special events.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -367,5 +390,11 @@
     <script src="js/contact.js" type="module"></script>
     <script src="js/faq.js" type="module"></script>
     <script src="js/animations.js" type="module"></script>
+    <script src="js/base.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/testimonials.js"></script>
 </body>
 </html>

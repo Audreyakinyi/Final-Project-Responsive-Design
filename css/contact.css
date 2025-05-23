@@ -9,8 +9,17 @@
 
 .contact {
     background-color: var(--background-light);
-    padding: 4rem 2rem;
+    padding: 4rem 0;    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-wrapper {
+    max-width: 1200px; 
     margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contact-header {
@@ -37,7 +46,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    padding: 0 2rem;
+    width: 100%;
 }
 
 .contact-form {
@@ -214,8 +223,8 @@ textarea {
     display: flex;
     flex-direction: row;
     padding: 3rem;
-    margin: 0 auto;
-    max-width: 1000px;
+    margin: 0;
+    width: 100%;
     box-shadow: none;
     border: none;
     gap: 3rem;

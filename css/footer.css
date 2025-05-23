@@ -12,6 +12,7 @@
     margin: 0 auto;
     padding: 3rem 2rem;
     flex-wrap: wrap;
+    max-width: 1200px; 
 }
 
 .footer-card {
@@ -25,6 +26,7 @@
     min-height: 260px;
     max-height: 420px;
     flex: 1 1 340px;
+    margin: 0 auto; 
 }
 
 .footer-card-left {
@@ -207,9 +209,9 @@
         padding: 2rem 1rem;
     }
     .footer-card {
-        max-height: 100%; /* changed from max-width */
-        min-height: 0; /* changed from min-width */
-        height: 100%; /* changed from width */
+        max-height: 100%; 
+        min-height: 0; 
+        height: 100%; 
     }
     .footer-card-right, .footer-card-left {
         align-items: center;
