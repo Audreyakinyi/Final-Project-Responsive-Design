@@ -5,20 +5,10 @@
 [build.environment]
   NODE_VERSION = "18"
 
-[context.production.environment]
-  NODE_ENV = "production"
-
-[context.deploy-preview]
-  command = "npm run build"
-
-[context.branch-deploy]
-  command = "npm run build"
-
-[context.split-test]
-  command = "npm run build"
-
 [context.production]
   command = "npm run build"
+  environment:
+    NODE_ENV = "production"
 
 [context.deploy-preview]
   command = "npm run build"
