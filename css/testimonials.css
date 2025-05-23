@@ -75,21 +75,39 @@
 }
 
 .nav-prev, .nav-next {
-    border: none;
-    font-size: 1.5rem;
-    color: #666;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    padding: 0;
-    position: relative;
-    overflow: hidden;
+    border: none !important;
+    font-size: 1.5rem !important;
+    color: white !important;
+    cursor: pointer !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+    padding: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    background-color: var(--primary-color) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    width: 40px !important;
+    font-weight: 600 !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+    height: 40px !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 .nav-prev::before, .nav-next::before {

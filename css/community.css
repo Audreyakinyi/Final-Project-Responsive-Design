@@ -4,11 +4,11 @@
     font-weight: 400;
     letter-spacing: 0.12em;
     color: var(--label-color);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
 }
 
 .community {
-    padding: 4rem 0;
+    padding: 1rem 0 3rem;
     position: relative;
     overflow: hidden;
     background-color: var(--background-light);
@@ -34,18 +34,91 @@
 
 .community-card {
     border-radius: 50px;
-    padding: 5rem 3rem; /* Increased vertical padding from 4rem to 5rem */
+    padding: 4rem 3rem;
     box-shadow: 0 15px 40px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center content vertically */
-    text-align: center;
     position: relative;
     overflow: hidden;
-    background: white;
+    background: rgba(0, 122, 204, 0.05);
     max-width: 100%;
-    min-height: 400px; /* Added minimum height */
+    min-height: 450px;
+    display: flex;
+}
+
+.community-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    width: 60%;
+}
+
+.community-images {
+    width: 40%;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Add a subtle overlay effect */
+.grid-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 122, 204, 0.2) 0%, rgba(0, 122, 204, 0.1) 100%);
+    border-radius: 10px;
+}
+
+.community-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    max-width: 600px;
+}
+
+.community-content h2 {
+    font-size: 2.5rem;
+    color: #000;
+    margin-bottom: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.community-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .community-card::before {
@@ -79,15 +152,19 @@
 .join-community {
     color: white;
     border: none;
-    padding: 1.2rem 2.5rem;
-    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
     border-radius: 30px;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    position: relative;
-    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: fit-content;
+    min-width: 100px;
 }
 
 .join-community::before {
