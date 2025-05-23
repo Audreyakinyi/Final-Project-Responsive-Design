@@ -1,0 +1,15 @@
+{
+  "name": "kicks-and-scents",
+  "version": "1.0.0",
+  "description": "Kicks & Scents - Your Style & Fragrance Destination",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run copy",
+    "copy": "node copy.js",
+    "start": "http-server"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

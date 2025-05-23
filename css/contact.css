@@ -246,15 +246,45 @@ textarea {
 }
 
 .contact-content p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #666;
     display: flex;
     align-items: center;
+    font-size: 1.2rem;
 }
 
 .contact-content i {
     color: #1B1D21;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
+    font-size: 1.4rem;
+}
+
+.response-time {
+    font-size: 0.95rem;
+    color: #666;
+    padding-left: 0.5rem;
+    font-style: italic;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: #666;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
