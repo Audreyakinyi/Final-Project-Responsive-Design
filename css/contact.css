@@ -86,6 +86,26 @@
     font-size: 1.1rem;
 }
 
+/* Modern underline style for input and textarea */
+.contact-form input,
+.contact-form textarea {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    transition: border-color 0.3s;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom: 2px solid var(--primary-color, #007acc);
+    background: transparent;
+}
+
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -180,39 +200,86 @@ textarea {
     }
 }
 
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
+@media (max-width: 992px) {
+    .contact-wrapper {
+        max-width: 100%;
+        padding: 0 1rem;
     }
-    
-    .hero p {
-        font-size: 1.2rem;
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        width: 100%;
     }
-    
-    .nav-links {
-        display: none;
-    }
-    
+    .contact-info,
     .contact-form {
-        padding: 2rem;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem 0.5rem;
+    }
+    .contact-wrapper {
+        padding: 0 0.5rem;
+    }
+    .contact-header h2 {
+        font-size: 1.5rem;
+    }
+    .contact-header p {
+        font-size: 1rem;
+    }
+    .contact-container {
+        flex-direction: column;
+        gap: 1.2rem;
+        padding: 0;
+        width: 100%;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+    .contact-form button {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+        border-radius: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
+    .contact-section {
+        padding: 1rem 0.2rem;
     }
-    
-    .hero p {
+    .contact-wrapper {
+        padding: 0 0.2rem;
+    }
+    .contact-header h2 {
         font-size: 1.1rem;
     }
-    
-    .contact-form {
-        padding: 1.5rem;
+    .contact-header p {
+        font-size: 0.9rem;
     }
-    
-    .submit-button {
-        width: 100%;
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+    .contact-form button {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+        border-radius: 14px;
     }
 }
 
@@ -293,5 +360,12 @@ textarea {
         padding: 2rem;
         border-radius: 30px;
         gap: 2rem;
+    }
+}
+
+/* Remove resize handle for textarea on small screens for a cleaner look */
+@media (max-width: 768px) {
+    .contact-form textarea {
+        resize: none;
     }
 }

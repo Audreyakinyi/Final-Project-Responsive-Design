@@ -273,3 +273,94 @@
         border-radius: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 2rem 0.5rem;
+    }
+    .testimonials-wrapper {
+        padding: 0 0.5rem;
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .testimonials-slider {
+        min-width: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0.5rem;
+        border-radius: 18px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto; /* Allow horizontal scroll */
+        position: relative;
+        scroll-snap-type: x mandatory; /* Enable snap scrolling */
+        -webkit-overflow-scrolling: touch;
+    }
+    .testimonial-cards {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        gap: 0;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        align-items: stretch;
+        justify-content: flex-start;
+        overflow: visible;
+        scroll-snap-type: x mandatory;
+        transition: none;
+    }
+    .testimonial-card {
+        width: 100vw !important;
+        min-width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        height: auto;
+        min-height: 140px;
+        padding: 1rem;
+        border-radius: 14px;
+        box-sizing: border-box;
+        flex: 0 0 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scroll-snap-align: center;
+    }
+    .testimonial-card p {
+        font-size: 0.98rem;
+        margin-bottom: 1rem;
+    }
+    .testimonial-card cite {
+        font-size: 0.85rem;
+    }
+    .testimonial-nav {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .nav-prev, .nav-next {
+        font-size: 1.2rem !important;
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        max-width: 32px !important;
+    }
+}
+
+/* Prevent horizontal scroll on small devices */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
+}

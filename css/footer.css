@@ -216,29 +216,102 @@
     .footer-card-right, .footer-card-left {
         align-items: center;
         text-align: center;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
     .footer-card-right h2 {
         font-size: 1.6rem;
     }
 }
 
+/* Stack left card last on small screens */
 @media (max-width: 600px) {
     .footer-cards {
+        flex-direction: column;
         padding: 1.2rem 0.5rem;
         gap: 1rem;
     }
     .footer-card {
-        padding: 1.2rem 0.7rem;
-        border-radius: 18px;
+        padding: 1.5rem 1rem;
+        margin: 0;
+        flex: 1 1 100%;
     }
-    .footer-card-right h2 {
-        font-size: 1.2rem;
+    .footer-card-left {
+        order: 2;
     }
-    .footer-support-btn {
-        padding: 0.7rem 1.2rem;
-        font-size: 1rem;
+    .footer-card-right {
+        order: 1;
+    }
+    .footer-logo .logo-main {
+        font-size: 1.8rem;
+    }
+    .footer-logo .logo-sub {
+        font-size: 0.9rem;
+    }
+    .category-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.6rem;
+    }
+    .category-links a {
+        font-size: 0.85rem;
+        white-space: normal;
+    }
+    .footer-social {
+        gap: 0.3rem;
+    }
+    .footer-bottom {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+    .footer-bottom-text {
+        font-size: 0.8rem;
+    }
+    .footer-bottom-links {
+        gap: 0.5rem;
+    }
+    .footer-bottom-links a {
+        font-size: 0.8rem;
+    }
+    .footer-categories {
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-links-list,
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-links-list a,
+    .footer-nav a {
+        min-width: 0;
+        max-width: 100%;
+        flex: unset;
+        text-align: left;
+        word-break: break-word;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .footer-logo .logo-main {
+        font-size: 1.3rem;
+    }
+    .footer-logo .logo-sub {
+        font-size: 0.95rem;
     }
 }
-.footer-card-left {
-    gap: 1rem;
+
+/* Prevent horizontal scroll on small devices */
+@media (max-width: 900px) {
+    html, body, .footer, .footer-cards, .footer-card, .footer-card-right, .footer-card-left {
+        overflow-x: hidden !important;
+    }
 }
